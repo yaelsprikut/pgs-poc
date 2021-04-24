@@ -18,7 +18,8 @@ phases:
   post_build:
     commands:
         - yarn cy:run
-        - ps
+        - ps 
+        - ls
         - exit
 artifacts:
   files:
