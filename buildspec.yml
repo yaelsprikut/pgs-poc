@@ -4,8 +4,8 @@ phases:
     commands:
       - echo Hi YAEL =]
       - echo Installing source NPM dependencies...
-      - yarn install
-      - yarn add serve
+      - npm install
+      - npm install serve
       - serve -v
       - which serve
   build:
