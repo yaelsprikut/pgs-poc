@@ -18,7 +18,7 @@ describe('My First Test', () => {
 
     it('gets text from header', () => {
       cy.get('.App-header > p').then((btn) => {
-        expect(btn[0].innerText).contains("Hello Yale!")
+        expect(btn[0].innerText).contains("Hello Yael!")
       })
     })
 
