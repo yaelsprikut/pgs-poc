@@ -6,7 +6,8 @@ phases:
       - echo Installing source NPM dependencies...
       - yarn install
       - yarn add serve
-      - echo serve -v
+      - serve -v
+      - which serve
   build:
     commands:
       - echo Build started on `date`
