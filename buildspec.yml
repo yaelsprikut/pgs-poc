@@ -5,6 +5,8 @@ phases:
       - echo Hi YAEL =]
       - echo Installing source NPM dependencies...
       - yarn install
+      - yarn add serve
+      - echo serve -v
   build:
     commands:
       - echo Build started on `date`
