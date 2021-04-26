@@ -1,18 +1,13 @@
-FROM node:14
+FROM node:14 as build
 
 # Create app directory
-WORKDIR /usr/src/app
-
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-
+WORKDIR /app
+COPY package.json .
+COPY yarn.lock .
 RUN yarn install
-# If you are building your code for production
-# RUN npm ci --only=production
-# Bundle app source
 COPY . .
-EXPOSE 3001
+RUN yarn build
 
-CMD [ "yarn", "start" ]
+FROM nginx:1.15
+COPY --from=build /app/build/ /usr/share/nginx/html
+EXPOSE 80

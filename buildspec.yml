@@ -19,9 +19,9 @@ phases:
     commands:
         - yarn cy:run
         - ps 
-        - ls
         - exit
 artifacts:
   files:
+    - imagedefinitions.json
     - '**/*'
   base-directory: build

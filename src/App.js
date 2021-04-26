@@ -13,7 +13,7 @@ function App() {
         <p id="unit-test-paragraph">Make sure this text is here.</p>
       </header>
       <div>
-        <p>Hello this is the body. This is 30px Text.</p>
+        <p>Hi this is an updated ECS Image! 9:03</p>
         <div><Button/></div>
       </div>
     </div>

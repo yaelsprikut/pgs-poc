@@ -1,0 +1,6 @@
+[
+    {
+      "name": "pgs-poc-container",
+      "imageUri": "037370625573.dkr.ecr.us-east-1.amazonaws.com/pgs-poc:latest"
+    }
+  ]

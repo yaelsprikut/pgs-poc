@@ -1,0 +1,10 @@
+{
+    "ImageSizeInBytes": "51200",
+    "ImageDigest": "sha256:5d3f6c29d6b1337424a48da7b9538e605a2e7040b16f36d23d31338369175106",
+    "Version": "1.0",
+    "RepositoryName": "pgs-poc",
+    "ImageURI": "037370625573.dkr.ecr.us-east-1.amazonaws.com/pgs-poc",
+    "ImageTags": [
+        "latest"
+    ]
+}
